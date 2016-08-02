@@ -1,3 +1,3 @@
-- Wearther(wear + weather) is an app that gives user the weather information of the city of their choice
+- Wearther(wear + weather) is an app that provides the users the current weather forecast (by typing in a city's name)
 
-- It also gives user advices on how to dress themselves for the temperature and wind speed
+- It also gives users advices on how to dress themselves appropriately according to the weather forecast
