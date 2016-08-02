@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Wearther</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body class="container">
+
+  <header>
+<!-- logo, also goes home when click -->
+  	<div class="logo">
+  		<a href="index.html"><img src="http://i.imgur.com/oXNXrVM.png" alt="wearther" style="width:100px;height:100px"></a>
+  	</div>
+  <div class="clearfix"></div>
+  </header>
+
+<!--============= navbar =============-->
+
+  <nav class="navfont">
+    <ul>
+      <li><a class="active" href="index.html" style="margin-left: 15px">Home</a></li>
+
+      <li class="dropdown1">
+        <a href="temp.html" class="dropbtn1">Temperature</a>
+        <div class="dropdown-content">
+          <div>Wear by the temperature</div>
+        </div>
+      </li>
+
+      <li class="dropdown1">
+        <a href="wind.html" class="dropbtn1">Wind</a>
+        <div class="dropdown-content">
+          <div>Bad hair day?</div>
+        </div>
+      </li>
+
+      <li class="dropdown1">
+        <a href="humidity.html" class="dropbtn1">Humidity</a>
+        <div class="dropdown-content">
+          <div>Do I need a embralla?</div>
+        </div>
+      </li>
+
+      <li>
+        <form class="navbar-form navbar-left">
+            <div class="form-group" style="margin: 0 0 6px 0">
+              <input type="text" id="city" class="form-control" placeholder="Please enter your city" style="margin-top: 5px">
+            </div>
+            <button type="button" id="button" class="letsgo" style="margin: 0 0 10px 5px" onclick="wearther()"> Let's go! </button>
+          </form>
+      </li>
+
+      <li class="dropdown1 navbar-right" style="margin-right: 15px">
+        <a href="#" class="dropbtn1">Contact Us</a>
+        <div class="dropdown-content">
+          <a href="mailto:vivian.mzh@gmail.com">Email</a>
+          <a href="tel:123-456-7890">(415)-123-5678</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+<!--============= content =============-->
+
+<!-- home image and text, will be changed according to the user's city temperature once they entered the city -->
+  <div><center><img id="homeimg" class="homeimg" src="http://i.imgur.com/JxBJTrJ.jpg" width="800" height="600"></center></div>
+  <br>
+  <div id="hometext" class="hometext">Why not wearing by the weather? Check your city's temperature to begin &#8593</div>
+  <br>
+
+<!--============= widget =============-->
+
+  <div class="weather-app">
+      <div class="left">
+  		<div class="temperature"><span id="temp"></span>&degF</div> 
+  		<div class="description"><span id="description"></span></div>
+  		<div class="location"><span id="location"></span></div>
+  	</div>	
+      <div class="right">
+  		<div class="top">
+  	  		<img id="icon" width="75px" src="imgs/codes/200.png"/>
+  		</div>
+  		<div class="bottom">
+  			<div class="humidity">
+  	    		<img src="imgs/humidity.png" height="16px"/>&nbsp<span id="humidity"></span> %
+  	  		</div>
+  	  		<div class="wind"><span id="wind"></span> mph <span id="wind"></span></div>
+  	  	</div>
+  	</div>
+  </div>
+  <br>
+  <br>
+
+<!--============= back to top =============-->
+
+	<footer id="footer">
+	<i><a href="index.html" class="back-to-top" style="display: inline"><img src="http://www.ultimus.com/hs-fs/hub/54405/file-2076076476-png/images/icons/bullets-arrows/scroll-to-top-ultimus-bpm.png?t=1469468569258" class="fa fa-arrow-circle-up"></a></i>
+	<div class="clearfix"></div>
+	<small>&copy; 2016 Wearther</small>
+	</footer>
+
+<!-- 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+<script src="main.js"></script>
+</body>
+</html>

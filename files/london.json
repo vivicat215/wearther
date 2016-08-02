@@ -1,0 +1,41 @@
+{
+"coord": {
+"lon": -0.13,
+"lat": 51.51
+},
+"weather": [
+{
+"id": 804,
+"main": "Clouds",
+"description": "overcast clouds",
+"icon": "04n"
+}
+],
+"base": "cmc stations",
+"main": {
+"temp": 18.88,
+"pressure": 1019,
+"humidity": 68,
+"temp_min": 17,
+"temp_max": 21.1
+},
+"wind": {
+"speed": 5.1,
+"deg": 230
+},
+"clouds": {
+"all": 92
+},
+"dt": 1469570087,
+"sys": {
+"type": 1,
+"id": 5091,
+"message": 0.0109,
+"country": "GB",
+"sunrise": 1469506633,
+"sunset": 1469562954
+},
+"id": 2643743,
+"name": "London",
+"cod": 200
+}
