@@ -6,9 +6,9 @@ function wearther() {
     var temp, humidity, wind, location, description, icon;
     var url = "http://api.openweathermap.org/data/2.5/weather?q="+document.getElementById("city").value+"&units=imperial&appid="+appid;
     var weather = {};
-    var xhttp = new XMLHttpRequest();
+    var xhttp = new XMLHttpRequest(); // execute when async is ture/readyState changes, readyState holds the status of the XMLHttpRequest
     xhttp.onreadystatechange = function() { // will be called once the server response
-        if (xhttp.readyState == 4 && xhttp.status == 200) {
+        if (xhttp.readyState == 4 && xhttp.status == 200) { //response is ready
             var data = JSON.parse(xhttp.responseText); 
             var weather = {};
             weather.description = data.weather[0].main;
@@ -45,7 +45,7 @@ function wearther() {
         }
     };
     // send request to server
-    xhttp.open("GET", url, true);
+    xhttp.open("GET", url, true); // specifies the type of request .open(method'type of request', url, async)
     xhttp.send(); 
 };
 
