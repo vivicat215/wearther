@@ -2,42 +2,29 @@ http://openweathermap.org
 
 api key = 8cc7b8faeb263abf8ba6979a7d6edbbb
 
-read me:
-
 - Homepage
-	- display the weather according to the city the user enters
+	- display the weather according to the city user enters
 	- display pictures according to the temperature in their city
 	- navbar with temperature
 	- contacts on navbar
 
-- temperature picture page
-	- buttons with different temperature rages
+- temperature page
+	- buttons with different temperature levels
 	- when user clicks the temperature buttons, show dressing tips for that temperature range and pictures
-
-
 
 To do:
 - when user press 'enter' key, button will be clicked
 http://stackoverflow.com/questions/155188/trigger-a-button-click-with-javascript-on-the-enter-key-in-a-text-box
-- make html structure
+
 
 - Goals
 	- show weather widget on home page
 	- show wearther tips on home page
-	- direct user to diffent html page to see tips about what to wear (done)
+	- direct user to diffent html page to see tips about what to wear
 
 
 Qs:
-
-	solved - when press different buttons, the old element won't disappear (only use one id, and change element with that id)
+	solved - when press different buttons, the old element won't disappear (only use one id, and alter element with that id)
 
 	- how to keep background img stay when scrolling down
-
-
-
-References:
-
-http://save50off.com/blog/looking-sharp-in-your-winter-layers-women/
-
-http://www.wikihow.com/Dress-for-Spring
 
