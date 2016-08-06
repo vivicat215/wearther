@@ -1,6 +1,7 @@
 /* new york city */
 body {
   background-image: url("http://science-all.com/images/wallpapers/website-background/website-background-15.jpg");
+  background-attachment: fixed;
 }
 
 /*body {
@@ -301,6 +302,17 @@ widget
   font-size: 30px;
 }
 
+.hometemptext {
+  text-align: center;
+  font-family: "Impact";
+  font-size: 30px;
+}
+
+/*.hometempimg {
+  width: 800px;
+  height: 600px;
+}*/
+
 .center {
   float: none;
   margin-left: auto;
@@ -310,6 +322,7 @@ widget
 .centered {
   text-align: center;
 }
+
 
 /*
   ========================================
