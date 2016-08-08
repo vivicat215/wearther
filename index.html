@@ -44,13 +44,14 @@
         </div>
       </li> -->
 
-      <li>
-        <form class="navbar-form navbar-left">
+        <li>
+        <div class="navbar-form navbar-left">
             <div class="form-group" style="margin: 0 0 6px 0">
-              <input type="text" id="city" class="form-control" placeholder="Your city name" style="margin-top:5px;width:200px">
+              <input type="text" id="city" class="form-control" placeholder="Please enter your city" style="margin-top: 5px" onkeydown = "if (event.keyCode == 13)
+                        document.getElementById('newbutton').click()">
             </div>
-            <button type="button" id="button" class="letsgo" style="margin: 0 0 10px 5px" onclick="wearther()"> Let's go! </button>
-          </form>
+            <button id="newbutton" class="letsgo" style="margin: 0 0 10px 5px" onclick="wearther()"> Let's go! </button>
+        </div>
       </li>
 
       <li class="dropdown1 navbar-right" style="margin-right: 15px">
@@ -87,7 +88,7 @@
   			<div class="humidity">
   	    		<img src="imgs/humidity.png" height="16px"/>&nbsp<span id="humidity"></span> %
   	  		</div>
-  	  		<div class="wind"><span id="wind"></span> mph <span id="wind"></span></div>
+  	  		<div class="wind">Wind: <span id="wind"></span> mph <span id="wind"></span></div>
   	  	</div>
   	</div>
   </div>
